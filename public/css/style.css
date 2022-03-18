@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .firstPage {
     display: flex;
     flex-direction: column;
@@ -77,11 +81,16 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 14px;
+    padding: 10px;
 
     color: #333333;
     display: flex;
     align-items: center;
     justify-content:space-around;
+}
+
+.biggerBox {
+    height: 90px;
 }
 
 .layout {
@@ -114,4 +123,47 @@
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     box-shadow: 0px -4px 6px 0px #0000000D;
 
+}
+
+.setinha {
+    width: 20px;
+    height: 13px;
+}
+
+.answerButton {
+    width: 55px;
+    height: 24px;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 8px;
+    color: #FFFFFF;
+}
+
+.redButton {
+    background: #FF3030;
+}
+
+.yellowButton {
+    background: #FF922E;
+}
+
+.greenButton {
+    background: #2FBE34;
+}
+
+.answerBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
 }
