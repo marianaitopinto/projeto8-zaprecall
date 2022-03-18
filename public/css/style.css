@@ -1,5 +1,4 @@
 .firstPage {
-    background-color: #FB6B6B;
     height: 100vh;   
     width: 381px; 
     display: flex;
@@ -38,4 +37,38 @@
     font-size: 20px;
     border: px solid #D70900;
     color: #D70900;
+}
+
+.hiden {
+    display: none;
+}
+
+.secondPage {
+    
+    height: 80px;   
+    width: 381px; 
+    font-family: 'Righteous'; 
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo2 {
+    width: 46px;
+    height: 50px;
+}
+
+.title2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+
+.background {
+    background-color: #FB6B6B;
 }
