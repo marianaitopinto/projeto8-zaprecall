@@ -1,0 +1,41 @@
+.firstPage {
+    background-color: #FB6B6B;
+    height: 100vh;   
+    width: 381px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Righteous';   
+}
+
+.logo {
+    width: 75px;
+    height: 95px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+.firstButton {
+    background: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 241px;
+    height: 51px;
+    margin-top: 80px;
+    font-size: 20px;
+    border: px solid #D70900;
+    color: #D70900;
+}
