@@ -1,12 +1,14 @@
 import ReactDOM from "react-dom";
 import Welcome from "./Welcome"
 import Deck from "./Deck"
+import React from "react"
 
 function App() {
+    const [clicked, setClicked] = React.useState(true);
+
     return (
         <>
-        <Welcome />
-        <Deck />
+            {clicked ? <Welcome setClicked={setClicked} /> : <Deck />}
         </>
     )
 }

@@ -1,13 +1,11 @@
 import React from "react";
 
-export default function Welcome() {
-    const [visible, setVisible] = React.useState("");
-    const css=`firstPage background ${visible}`
+export default function Welcome({setClicked}) {
     return (
-        <div className={css}>
+        <div className="firstPage layout">
             <img className="logo" src="img/logo.png" />
             <p className="title">ZapRecall</p>
-            <button className="firstButton" onClick={() => setVisible("hiden")}>Iniciar Recall!</button>
+            <button className="firstButton" onClick={() => setClicked(false)}>Iniciar Recall!</button>
         </div>
     )
 }
