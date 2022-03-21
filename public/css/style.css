@@ -167,3 +167,23 @@
     line-height: 14px;
     color: #333333;
 }
+
+.red {
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+.green {
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
+.yellow {
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+.answerIcon {
+    width: 17px;
+    height: 17px;
+}
