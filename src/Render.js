@@ -15,7 +15,7 @@ export default function Render({ questionNo, question, answer, done, setDone, ic
     else if (step === "question") {
         return (
             <div className="deckBox biggerBox">
-                <p>{question}</p>
+                <p className="question">{question}</p>
                 <img className="setinha" src="img/setinha.png" onClick={() => setStep("answer")} />
             </div>
         )

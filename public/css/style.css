@@ -12,15 +12,15 @@
 }
 
 .logo {
-    width: 75px;
-    height: 95px;
+    width: 136px;
+    height: 161px;
 }
 
 .title {
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 31px;
+    font-size: 36px;
+    line-height: 45px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -34,8 +34,8 @@
     border: 1px solid #D70900;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    width: 241px;
-    height: 51px;
+    width: 246px;
+    height: 54px;
     margin-top: 80px;
     font-size: 20px;
     border: px solid #D70900;
@@ -43,8 +43,7 @@
 }
 
 .header {
-    
-    height: 80px;   
+    height: 120px;   
     width: 381px; 
     font-family: 'Righteous'; 
     font-size: 20px;
@@ -54,14 +53,14 @@
 }
 
 .logo2 {
-    width: 46px;
-    height: 50px;
+    width: 52px;
+    height: 60px;
 }
 
 .title2 {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 31px;
     letter-spacing: -0.012em;
     color: #FFFFFF;
@@ -69,8 +68,8 @@
 }
 
 .deckBox {
-    width: 230px;
-    height: 50px;
+    width: 300px;
+    height: 65px;
     box-shadow: 0px 4px 5px 0px #00000026;
     background: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
@@ -87,10 +86,11 @@
     display: flex;
     align-items: center;
     justify-content:space-around;
+    position: relative;
 }
 
 .biggerBox {
-    height: 90px;
+    height: 131px;
 }
 
 .layout {
@@ -105,8 +105,14 @@
     align-items: center;
 }
 
+.question {
+    padding:5px;
+    letter-spacing: -0.012em;
+    line-height: 22px;
+}
+
 .footer {
-    height: 80px;   
+    height: 70px;   
     width: 381px; 
     position: fixed;
     left: 0px;
@@ -114,9 +120,13 @@
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 14px;
     text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     color: #333333;
     background: #FFFFFF;
@@ -125,21 +135,35 @@
 
 }
 
+.footer img {
+    width: 23px;
+    height: 23px;
+}
+
+.result {
+    height: 171px;
+}
+
 .setinha {
     width: 20px;
     height: 13px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 .answerButton {
-    width: 55px;
-    height: 24px;
+    width: 85.17px;
+    height: 37.17px;
     border-radius: 5px;
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 7px;
-    line-height: 8px;
+    font-size: 10px;
     color: #FFFFFF;
+    border: none;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .redButton {
@@ -163,9 +187,11 @@
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
     color: #333333;
+    letter-spacing: -0.012em;
+    line-height: 22px;
 }
 
 .red {
@@ -186,4 +212,47 @@
 .answerIcon {
     width: 17px;
     height: 17px;
+}
+
+.reload {
+    width: 167px;
+    height: 32px;
+    background: #FB6B6B;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1100px) {
+    .header, .footer, .layout {
+        width: 1600px;
+    }
+
+    .deckBox {
+        width: 567.12px;
+        justify-content: space-between;
+        padding: 15px;
+    }
 }
