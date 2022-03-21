@@ -22,7 +22,7 @@ export default function BodyDeck() {
     const [wrong, setWrong] = React.useState(0);
     return (
         <div className="fundo">
-            {decks.map((deck, index) => <Render questionNo={index + 1} question={deck.question} answer={deck.answer} done={done} setDone={setDone} icons={icons} setIcons={setIcons} wrong={wrong} setWrong={setWrong}/>)}
+            {decks.map((deck, index) => <Render key={deck.questionNo} questionNo={index + 1} question={deck.question} answer={deck.answer} done={done} setDone={setDone} icons={icons} setIcons={setIcons} wrong={wrong} setWrong={setWrong}/>)}
             <Footer done={done} icons={icons} wrong={wrong}/>
         </div>
     )

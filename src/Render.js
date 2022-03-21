@@ -1,7 +1,6 @@
 import React from "react";
 export default function Render({ questionNo, question, answer, done, setDone, icons, setIcons, wrong, setWrong }) {
     const [step, setStep] = React.useState("");
-    const colors = ["red", "yellow", "green"];
 
     if (step === "") {
         return (
@@ -16,7 +15,7 @@ export default function Render({ questionNo, question, answer, done, setDone, ic
         return (
             <div className="deckBox biggerBox">
                 <p className="question">{question}</p>
-                <img className="setinha" src="img/setinha.png" onClick={() => setStep("answer")} />
+                <img className="setinha" src="img/setinha.png" alt="setinha" onClick={() => setStep("answer")} />
             </div>
         )
     }
@@ -27,9 +26,9 @@ export default function Render({ questionNo, question, answer, done, setDone, ic
             <div className="deckBox answerBox biggerBox">
                 <p className="answer">{answer}</p>
                 <div>
-                    <button className="answerButton redButton" onClick={() => { setStep("red"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/red.png" />]); setWrong(wrong + 1) }}>Não lembrei</button>
-                    <button className="answerButton yellowButton" onClick={() => { setStep("yellow"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/yellow.png" />]) }}>Quase não lembrei</button>
-                    <button className="answerButton greenButton" onClick={() => { setStep("green"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/green.png" />]) }}>Zap!</button>
+                    <button className="answerButton redButton" onClick={() => { setStep("red"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/red.png" alt="red"/>]); setWrong(wrong + 1) }}>Não lembrei</button>
+                    <button className="answerButton yellowButton" onClick={() => { setStep("yellow"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/yellow.png" alt="yellow"/>]) }}>Quase não lembrei</button>
+                    <button className="answerButton greenButton" onClick={() => { setStep("green"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/green.png" alt="green"/>]) }}>Zap!</button>
                 </div>
             </div>
         )
@@ -46,7 +45,7 @@ function Finished({ step, questionNo }) {
     return (
         <div className={`deckBox ${step}`}>
             <p>Pergunta {questionNo}</p>
-            <img className="answerIcon" src={`img/${step}.png`} />
+            <img className="answerIcon" src={`img/${step}.png`} alt={`${step}`} />
         </div>
     )
 }

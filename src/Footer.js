@@ -10,7 +10,7 @@ export default function Footer({ done, icons, wrong }) {
 
                 < div className="footer result" >
                     <div className="container2">
-                        <img src="img/sad.png" />
+                        <img src="img/sad.png" alt="sad"/>
                         <p>  PUTZ!</p>
                     </div>
                     <p>Ainda faltaram alguns...</p>
@@ -27,7 +27,7 @@ export default function Footer({ done, icons, wrong }) {
 
                 < div className="footer result" >
                     <div className="container2">
-                        <img src="img/party.png" />
+                        <img src="img/party.png" alt="party"/>
                         <p>  PARABÉNS!</p>
                     </div>
                     <p>Você não esqueceu de nenhum flashcard!</p>
