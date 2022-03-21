@@ -19,10 +19,11 @@ decks.sort(Shuffle);
 export default function BodyDeck() {
     const [done, setDone] = React.useState(0);
     const [icons, setIcons] = React.useState([]);
+    const [wrong, setWrong] = React.useState(0);
     return (
         <div className="fundo">
-            {decks.map((deck, index) => <Render questionNo={index + 1} question={deck.question} answer={deck.answer} done={done} setDone={setDone} icons={icons} setIcons={setIcons}/>)}
-            <Footer done={done} setDone={setDone} icons={icons} setIcons={setIcons}/>
+            {decks.map((deck, index) => <Render questionNo={index + 1} question={deck.question} answer={deck.answer} done={done} setDone={setDone} icons={icons} setIcons={setIcons} wrong={wrong} setWrong={setWrong}/>)}
+            <Footer done={done} icons={icons} wrong={wrong}/>
         </div>
     )
 }
