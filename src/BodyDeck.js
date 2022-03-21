@@ -1,4 +1,6 @@
 import Render from "./Render";
+import Footer from "./Footer"
+import React from 'react';
 
 const decks = [
     { question: "O que é JSX?", answer: "Uma extensão de linguagem do JavaScript" },
@@ -10,15 +12,17 @@ const decks = [
     { question: "Usamos props para __", answer: "Passar diferentes informações para componentes." },
     { question: "Usamos estado (state) para __", answer: "Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente." }
 ];
+let index = 0;
 
 decks.sort(Shuffle);
 
 export default function BodyDeck() {
-    
-
+    const [done, setDone] = React.useState(0);
+    const [icons, setIcons] = React.useState([]);
     return (
         <div className="fundo">
-            {decks.map((deck, index) => <Render questionNo={index + 1} question={deck.question} answer={deck.answer} />)}
+            {decks.map((deck, index) => <Render questionNo={index + 1} question={deck.question} answer={deck.answer} done={done} setDone={setDone} icons={icons} setIcons={setIcons}/>)}
+            <Footer done={done} setDone={setDone} icons={icons} setIcons={setIcons}/>
         </div>
     )
 }

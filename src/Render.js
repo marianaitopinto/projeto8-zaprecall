@@ -1,5 +1,5 @@
 import React from "react";
-export default function Render({ questionNo, question, answer }) {
+export default function Render({ questionNo, question, answer, done, setDone, icons, setIcons }) {
     const [step, setStep] = React.useState("");
     const colors = ["red", "yellow", "green"];
 
@@ -27,9 +27,9 @@ export default function Render({ questionNo, question, answer }) {
             <div className="deckBox answerBox biggerBox">
                 <p className="answer">{answer}</p>
                 <div>
-                    <button className="answerButton redButton" onClick={() => setStep("red")}>Não lembrei</button>
-                    <button className="answerButton yellowButton" onClick={() => setStep("yellow")}>Quase não lembrei</button>
-                    <button className="answerButton greenButton" onClick={() => setStep("green")}>Zap!</button>
+                    <button className="answerButton redButton" onClick={() => {setStep("red"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/red.png"/>])}}>Não lembrei</button>
+                    <button className="answerButton yellowButton" onClick={() => {setStep("yellow"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/yellow.png"/>])}}>Quase não lembrei</button>
+                    <button className="answerButton greenButton" onClick={() => {setStep("green"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/green.png"/>])}}>Zap!</button>
                 </div>
             </div>
         )

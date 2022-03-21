@@ -1,6 +1,5 @@
 import HeaderDeck from "./HeaderDeck";
 import BodyDeck from "./BodyDeck"
-import Footer from "./Footer"
 
 export default function Deck() {
     return (
@@ -9,7 +8,7 @@ export default function Deck() {
             <div className="bodyDeck">
                 <BodyDeck />
             </div>
-            <Footer />
+            
         </div>
     )
 }
