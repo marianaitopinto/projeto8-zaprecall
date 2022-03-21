@@ -16,8 +16,8 @@ export default function Footer({ done, icons, wrong }) {
                     <p>Ainda faltaram alguns...</p>
                     <p>Mas não desanime!</p>
                     <div className="container">
-                        <div>
-                            {icons.map((icon) => icon)}
+                        <div className="icons">
+                            {icons.map((icon) => icon )}
                         </div>
                         <button className="reload" onClick={restartGame}>REINICIAR RECALL</button>
                     </div>
@@ -32,7 +32,7 @@ export default function Footer({ done, icons, wrong }) {
                     </div>
                     <p>Você não esqueceu de nenhum flashcard!</p>
                     <div className="container">
-                        <div>
+                        <div className="icons">
                             {icons.map((icon) => icon)}
                         </div>
                         <button className="reload" onClick={restartGame}>REINICIAR RECALL</button>

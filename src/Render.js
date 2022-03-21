@@ -25,7 +25,7 @@ export default function Render({ questionNo, question, answer, done, setDone, ic
         return (
             <div className="deckBox answerBox biggerBox">
                 <p className="answer">{answer}</p>
-                <div>
+                <div className="buttons">
                     <button className="answerButton redButton" onClick={() => { setStep("red"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/red.png" alt="red"/>]); setWrong(wrong + 1) }}>Não lembrei</button>
                     <button className="answerButton yellowButton" onClick={() => { setStep("yellow"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/yellow.png" alt="yellow"/>]) }}>Quase não lembrei</button>
                     <button className="answerButton greenButton" onClick={() => { setStep("green"); setDone(done + 1); setIcons([...icons, <img className="answerIcon" src="img/green.png" alt="green"/>]) }}>Zap!</button>

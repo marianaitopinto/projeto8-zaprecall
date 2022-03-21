@@ -12,7 +12,6 @@ const decks = [
     { question: "Usamos props para __", answer: "Passar diferentes informações para componentes." },
     { question: "Usamos estado (state) para __", answer: "Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente." }
 ];
-let index = 0;
 
 decks.sort(Shuffle);
 
@@ -22,7 +21,7 @@ export default function BodyDeck() {
     const [wrong, setWrong] = React.useState(0);
     return (
         <div className="fundo">
-            {decks.map((deck, index) => <Render key={deck.questionNo} questionNo={index + 1} question={deck.question} answer={deck.answer} done={done} setDone={setDone} icons={icons} setIcons={setIcons} wrong={wrong} setWrong={setWrong}/>)}
+            {decks.map((deck, index) => <Render key={index} questionNo={index + 1} question={deck.question} answer={deck.answer} done={done} setDone={setDone} icons={icons} setIcons={setIcons} wrong={wrong} setWrong={setWrong}/>)}
             <Footer done={done} icons={icons} wrong={wrong}/>
         </div>
     )

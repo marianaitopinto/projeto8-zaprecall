@@ -193,6 +193,8 @@
     color: #333333;
     letter-spacing: -0.012em;
     line-height: 22px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .red {
@@ -244,10 +246,17 @@
 
 .icons {
     margin-top: 10px;
+    display: flex;
+    gap: 5px;
 }
 
 .header, .footer {
     align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 1100px) {
