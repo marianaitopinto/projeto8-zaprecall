@@ -6,7 +6,7 @@ export default function Render({ questionNo, question, answer }) {
     if (step === "") {
         return (
             <div className="deckBox" onClick={() => setStep("question")}>
-                <p>{questionNo}</p>
+                <p>Pergunta {questionNo}</p>
                 <ion-icon name="play-outline"></ion-icon>
             </div>
         )
@@ -45,7 +45,7 @@ export default function Render({ questionNo, question, answer }) {
 function Finished({ step, questionNo }) {
     return (
         <div className={`deckBox ${step}`}>
-            <p>{questionNo}</p>
+            <p>Pergunta {questionNo}</p>
             <img className="answerIcon" src={`img/${step}.png`} />
         </div>
     )
